@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
+
+@font-face {
+  font-family: Rollgates Luxery;
+  src: url(/assets/fonts/Rollgates\ Luxury);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body,
+html {
+  font-family: "Lato", Helvetica, sans-serif;
+}
+#logo {
+  font-family: "Rollgates Luxery";
+}
+
+/*index.html*/
+#welkom {
+  font-family: "Rollgates Luxery";
+}
+
+#populair {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#ad_tekst {
+  font-family: "Rollgates Luxery";
+}
+
+/*product.html*/
+#tussentitel {
+  font-family: "Rollgates Luxery";
+}
+
+#titel {
+  font-family: Arial, "Helvetica Neue", Helvetica;
+}
+#prijs {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.omschrijvingen {
+  font-size: 14px;
+}
+#omschrijving {
+  font-weight: bold;
+  line-height: 20px;
+}
+
+#omschrijving_product {
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 2rem;
+}
+
+#ingrediënten_span {
+  font-weight: bold;
+  line-height: 20px;
+}
+
+#ingrediënten {
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 2rem;
+}
+
+#inhoud {
+  font-weight: bold;
+}
+
+#extra_producten {
+  font-size: 2rem;
+  line-height: 20px;
+}
+
+.reviews {
+  font-size: 14px;
+}
+
+#laat-review-achter,
+#klantreviews {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 20px;
+}
+#klantreviews {
+  margin-bottom: 2rem;
+}
+.reviews-lijst {
+  font-weight: 400;
+  line-height: 27px;
+}

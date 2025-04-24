@@ -1,0 +1,1095 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+#banner {
+  text-align: center;
+  font-size: small;
+  background: linear-gradient(
+    50deg,
+    #f097d1,
+    #eeb0dd 10%,
+    #e9acc5f2 50%,
+    #edd2d3 100%
+  );
+  margin: 0 auto;
+  padding: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+/*zelf gemaakte logo*/
+.logo {
+  width: 15rem;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+#logo {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #eeb0dd;
+}
+#slogan {
+  font-size: 1rem;
+  text-align: center;
+  color: #c858aa;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*nav*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link:hover {
+  color: #c858aa;
+  border-bottom: 1px solid;
+}
+
+input {
+  box-sizing: border-box;
+  margin-left: 0.2rem;
+  padding-left: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/*main*/
+
+/*eerste section*/
+#welkom {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.home_page {
+  padding: 2rem;
+  margin-bottom: 8rem;
+  padding-bottom: 0;
+}
+
+#ad_tekst {
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 2rem;
+}
+#bannerpink {
+  display: block;
+  width: 100%;
+}
+
+/*2de section - korte info over de shop*/
+.aboutshop {
+  background-color: #f8e3e8;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.uitleg_shop {
+  flex: 1 1;
+  margin: 0 1rem;
+}
+
+#shoptitel {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#text {
+  font-size: 20px;
+  max-width: 100%;
+}
+
+#bloemen {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin: auto 15rem;
+}
+
+/*3de section - de populaire producten*/
+#populair {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-left: 5rem;
+}
+
+.pop {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+.populaire_producten {
+  width: 20rem;
+  padding: 5rem;
+  background-color: white;
+  border: 1px solid #efe7e7;
+  border-radius: 5%;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.populaire_producten:hover {
+  box-shadow: 20px 20px 20px #f8e3e8;
+}
+
+.populaire_producten p {
+  font-weight: bold;
+  margin: 1rem 0 1rem 0;
+}
+
+/*section me*/
+.abt_me {
+  background-color: #f8e3e8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container_abt_me {
+  margin-left: 6rem;
+}
+
+#title_abt_me {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#tekst_abt_me {
+  font-size: 20px;
+  width: 50rem;
+}
+
+#me {
+  font-style: italic;
+}
+
+/*Footer*/
+.logo-footer {
+  margin-top: 2rem;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+#tekst {
+  font-size: 12px;
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-left: 55rem;
+}
+.socials ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.socials img {
+  width: 30px;
+  height: auto;
+}
+
+/*shop.html*/
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+}
+
+.producten {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 2rem;
+  grid-column: 2/3;
+}
+
+.product {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 20rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #efe7e7;
+  border-radius: 5%;
+  padding: 0.5em;
+}
+.product a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.product img {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.titel,
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product:hover {
+  box-shadow: 20px 20px 20px #f8e3e8;
+}
+
+.cartButton,
+.wishlist {
+  border: 2px solid #cecece;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 65px;
+  margin-bottom: 5px;
+  width: 55%;
+  text-align: center;
+}
+
+.cartButton:hover,
+.wishlist:hover {
+  background: linear-gradient(
+    50deg,
+    #f097d1,
+    #eeb0dd 10%,
+    #e9acc5f2 50%,
+    #edd2d3 100%
+  );
+  color: #fff;
+}
+
+.cartButton:focus,
+.wishlist:focus {
+  outline: none;
+}
+
+.cartButton:active,
+.wishlist:active {
+  transform: translateY(1px);
+}
+aside {
+  grid-row: 1;
+  grid-column: 1;
+  margin-left: 1rem;
+}
+
+#sidebar {
+  font-weight: bold;
+}
+
+#prijsjes {
+  font-weight: bold;
+}
+
+.cart-aside {
+  position: sticky;
+  top: 20px;
+  width: 300px;
+  background-color: #fdecfa;
+  padding: 1rem;
+  height: 70rem;
+  border: #cecece 1px solid;
+  box-shadow: 20px 20px 20px #f8e3e8;
+  border-radius: 10px;
+}
+
+.cart-aside h2 {
+  color: #c858aa;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.cart-list {
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.cart-aside p {
+  color: #666;
+  margin-top: 1rem;
+  border-top: 1px solid #efe7e7;
+  padding-top: 0.5rem;
+}
+
+.total-price {
+  font-weight: bold;
+  color: #c858aa;
+  float: right;
+}
+#cart-list li {
+  margin-bottom: 10px;
+  padding: 5px;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.remove-button {
+  background: linear-gradient(
+    50deg,
+    #f097d1,
+    #eeb0dd 10%,
+    #e9acc5f2 50%,
+    #edd2d3 100%
+  );
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.remove-button:hover {
+  background-color: darkred;
+}
+
+aside a {
+  color: #c858aa;
+  text-decoration: none;
+}
+
+aside a:hover {
+  border-bottom: 1px solid #eeb0dd;
+}
+
+.aside-action {
+  background-color: #f097d1;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.aside-action:hover {
+  background-color: #eeb0dd;
+}
+/*nieuwsbrief*/
+.newsletter {
+  background-color: #f9e6eb;
+  padding: 1rem;
+}
+#nieuwsbrief {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  height: 3rem;
+}
+h6 {
+  text-align: center;
+}
+
+.email {
+  text-align: center;
+}
+
+#email {
+  margin-top: 1rem;
+  text-align: left;
+  padding: 0.5rem;
+  background-color: white;
+  padding: 0.6rem;
+  width: 20rem;
+}
+
+#inschrijven {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem;
+  width: 10rem;
+}
+#winkelwagen,
+#wishlist {
+  cursor: pointer;
+}
+
+/*Product*/
+/*eerste section = product info*/
+
+.product_voorpage {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-bottom: 2rem;
+  padding: 10px;
+  margin: auto;
+}
+
+figure {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column wrap;
+  bottom: 20rem;
+}
+
+#product_info {
+  box-sizing: border-box;
+}
+#titel {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#tussentitel {
+  font-size: 3rem;
+  text-align: left;
+}
+#review-span {
+  text-decoration: underline;
+}
+
+#review-span:hover {
+  color: blue;
+  text-decoration: underline blue;
+}
+
+#hoeveelheid {
+  margin-bottom: 2rem;
+  width: 2.5rem;
+  height: 1.5rem;
+}
+
+.order {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+}
+#winkelwagen {
+  border: 1px solid #f3dbed;
+  background-color: #f3dbed;
+  border-radius: 10px;
+  width: 15rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+#winkelwagen:hover {
+  box-shadow: 10px 10px 10px #ddd;
+}
+
+#wishlist {
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/*2de section = omschrijvingen*/
+.omschrijvingen {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto 20rem;
+}
+
+#inhoud_p {
+  margin-bottom: 5rem;
+}
+/*3de section = producten*/
+#extra_producten {
+  font-weight: bold;
+  padding: 1rem;
+  margin-left: 19rem;
+}
+
+.extra_producten {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+#bestellen {
+  background-color: #f3dbed;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#product_laneige {
+  margin-bottom: 2rem;
+}
+
+/*4de section = reviews*/
+.reviews {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 5rem;
+}
+/*Eerste article van review*/
+.review-1 {
+  box-sizing: border-box;
+  padding: 1rem 2rem 2rem;
+}
+
+#formreview {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 2rem;
+}
+label[for="naam"],
+label[for="achternaam"],
+label[for="email"],
+label[for="reviewcomment"] {
+  color: #c858aa;
+}
+input[id="naam"],
+input[id="achternaam"] {
+  margin: 0.5rem 0;
+}
+
+#email {
+  height: 15px;
+}
+
+/*sterren*/
+.ster-rating {
+  margin: 1rem 0;
+  color: gold;
+}
+#reviewcomment {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#submit {
+  border: 1px solid #ddd;
+  background-color: #ffedf8;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+#submit:hover {
+  box-shadow: 10px 10px 10px #ddd;
+}
+
+/*Tweede article van review*/
+.review-2 {
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.review-item {
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffedf8;
+}
+
+.sterren {
+  color: gold;
+}
+#heimish1 {
+  margin-bottom: 35px;
+}
+#iunik1 {
+  margin-bottom: 1.2rem;
+}
+#SKIN1004 {
+  margin-bottom: 20px;
+}
+
+#laneige1 {
+  margin-bottom: 40px;
+}
+
+#laneige2 {
+  margin-bottom: 40px;
+}
+
+#laneige3 {
+  margin-bottom: 90px;
+}
+
+#anua1 {
+  margin-bottom: 9px;
+}
+#beautyofjoseon1 {
+  margin-bottom: 50px;
+}
+/*Contact.html*/
+.contact {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5rem;
+  padding: 2rem 10rem;
+}
+
+.above h2,
+.under h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+label[for="name"],
+label[for="e-mail"],
+label[for="vraag"] {
+  color: #c858aa;
+}
+
+.contactform input,
+.contactform textarea {
+  width: 35rem;
+  height: 2rem;
+  border: 0;
+  border: 1px solid black;
+  margin-bottom: 3rem;
+}
+
+.contactform textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 10rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.contactform .contactsend {
+  width: 10rem;
+  color: #c858aa;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  border-radius: 5px;
+  padding: 0.4rem 0;
+}
+
+.contactform .contactsend:hover {
+  box-shadow: 20px 20px 20px #f8e3e8;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact h2 {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.contactform input,
+.contactform textarea {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.contactform #name {
+  animation-delay: 0.5s;
+}
+
+.contactform #e-mail {
+  animation-delay: 0.7s;
+}
+
+.contactform #vraag {
+  animation-delay: 0.9s;
+}
+
+.contactform .contactsend {
+  animation-delay: 1.1s;
+}
+
+address {
+  line-height: 20px;
+  margin-bottom: 2rem;
+}
+
+#emailadres {
+  color: #c858aa;
+}
+
+#kaart {
+  margin-bottom: 10rem;
+}
+#map {
+  height: 600px;
+  width: 600px;
+}
+.customer-card {
+  border: 1px solid #ffffff;
+  background-color: #f3dbed;
+  max-width: 800px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.customer-image {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.customer-info {
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.customer-review {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#customers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: transform;
+}
+
+.customer-card:hover {
+  transform: scale(1.05);
+}
+.bronnen {
+  margin-left: 2rem;
+}
+
+/*-----Mediaquerries-----*/
+@media (max-width: 480px) {
+  #logo {
+    font-size: 1.5em;
+  }
+  #slogan {
+    font-size: 1em;
+  }
+  .nav-link {
+    font-size: 0.9em;
+  }
+  #zoek {
+    width: 80%;
+  }
+  .wishlist {
+    font-size: 1.2em;
+  }
+}
+/*Klanten*/
+flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/*Mediaquerries*/
+@media (max-width: 480px) {
+  .logo {
+    margin-bottom: 1rem;
+  }
+  #populair {
+    text-align: center;
+    margin: auto;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nav-menu {
+    gap: 10px;
+  }
+  #shopping,
+  #blackheart {
+    display: none;
+  }
+  .aboutshop {
+    display: flex;
+    flex-direction: column;
+  }
+  #bloemen {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .abt_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .container_abt_me {
+    margin: 0 1rem;
+  }
+  #tekst_abt_me {
+    width: auto;
+  }
+  .shop {
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+  }
+  .cart-aside {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    top: 0;
+    box-shadow: none;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+  }
+
+  aside {
+    margin: auto;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-bottom: 4rem;
+  }
+  #inschrijven {
+    margin-top: 1rem;
+  }
+  .omschrijvingen {
+    margin: auto;
+    margin-left: 1rem;
+  }
+
+  #extra_producten {
+    margin-left: 1rem;
+    padding: 0;
+  }
+  .reviews {
+    border: none;
+    margin-left: 10rem;
+  }
+  .review-1 {
+    margin: 0rem 10px;
+  }
+  .reviews,
+  .review-2 {
+    padding: 0;
+  }
+  #laat-review-achter {
+    text-align: center;
+    margin: 30px;
+  }
+  #naam,
+  #achternaam,
+  #email {
+    width: 100%;
+  }
+  #submit {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .under {
+    margin-left: 1;
+  }
+  .contact {
+    margin-left: 1rem;
+    padding: 0;
+  }
+  #map {
+    height: 250px;
+    width: 300px;
+  }
+  .contactform input,
+  .contactform textarea {
+    width: 100%;
+    height: auto;
+  }
+
+  #customers {
+    grid-template-rows: 1fr, 1fr;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .socials {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  .socials ul {
+    margin-left: 1px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #customers {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    font-size: 15px;
+  }
+  #zoeken {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+  #searching {
+    max-width: 20px;
+  }
+  #bloemen {
+    width: 100%;
+    margin: 5rem 2rem;
+  }
+  .pop {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .abt_me {
+    gap: 2rem;
+  }
+  .container_abt_me {
+    margin: 0 1rem;
+  }
+  #tekst_abt_me {
+    width: 23rem;
+  }
+  .KZ {
+    margin: 5rem 2rem;
+  }
+  #kaoutar {
+    max-width: 250px;
+  }
+  .socials {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .omschrijvingen {
+    margin: auto 8rem;
+  }
+  #extra_producten {
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+  }
+  #laat-review-achter {
+    text-align: center;
+  }
+  #klantreviews {
+    text-align: center;
+  }
+  .contact {
+    padding: 2rem 5rem;
+  }
+  #customers {
+    margin-left: 1rem;
+    grid-template-columns: 1fr, 1fr;
+  }
+
+  .customer-card {
+    height: 500px;
+  }
+}
